@@ -371,13 +371,13 @@ static int cfs_statfs(const char *path, struct statvfs *stat)
 {
   stat->f_bsize = 4096;
   stat->f_frsize = 4096;
-  stat->f_blocks = INT_MAX;
+  stat->f_blocks = 53687091211;
   stat->f_bfree = stat->f_blocks;
   stat->f_bavail = stat->f_blocks;
-  stat->f_files = INT_MAX;
-  stat->f_ffree = INT_MAX;
-  stat->f_favail = INT_MAX;
-  stat->f_namemax = INT_MAX;
+  stat->f_files = 53687091211;
+  stat->f_ffree = 53687091211;
+  stat->f_favail = 53687091211;
+  stat->f_namemax = 53687091211;
   cloudfs_tenant_info(stat);
   return 0;
 }
